@@ -23,6 +23,10 @@ const requireAdmin = (nextState, replace) => {
   }
 }
 
+//here auth is provided to Main Container route to get the instance of the route across all the components
+// Where is in components we are also importing the authservice just to define proptypes which are coming form
+//parent component 
+
 export const makeMainRoutes = () => {
   return (
     <Route path="/" component={Container} auth={auth}>
